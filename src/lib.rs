@@ -1,4 +1,6 @@
 pub mod core;
+pub mod enums;
+
 pub use core::space_cleaner::SpaceCleaner;
 
 // ejemplo uso:
