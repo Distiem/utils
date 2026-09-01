@@ -2,7 +2,7 @@
 // Severity
 // ---------------------------------------------------------------------------
 
-#[derive(Debug, Clone, PartialEq, Eq)]
+#[derive(Debug, PartialEq, Eq)]
 pub enum Severity {
     Error,
     Warning,

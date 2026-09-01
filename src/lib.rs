@@ -1,5 +1,7 @@
 pub mod space_cleaner;
 pub mod enums;
+pub mod limite_consulta;
+pub mod string_validador;
 
 // ejemplo uso:
 
