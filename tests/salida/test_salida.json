@@ -1,0 +1,452 @@
+[
+  {
+    "id": "01_espacios_multiples",
+    "entrada": "Hola     mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "02_espacios_inicio",
+    "entrada": "    Hola mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "03_espacios_final",
+    "entrada": "Hola mundo    ",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "04_espacios_inicio_final",
+    "entrada": "   Hola mundo   ",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "05_tabuladores",
+    "entrada": "Hola\t\tmundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "06_saltos_linea",
+    "entrada": "Hola\n\nmundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "07_crlf",
+    "entrada": "Hola\r\n\r\nmundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "08_form_feed",
+    "entrada": "Hola\fmundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "09_vertical_tab",
+    "entrada": "Hola\u000bmundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "10_nbsp",
+    "entrada": "Hola mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "11_nbsp_multiples",
+    "entrada": "Hola   mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "12_ensp",
+    "entrada": "Hola mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "13_emsp",
+    "entrada": "Hola mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "14_thin_space",
+    "entrada": "Hola mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "15_narrow_nbsp",
+    "entrada": "Hola mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "16_ideographic_space",
+    "entrada": "Hola　mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "17_line_separator",
+    "entrada": "Hola mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "18_paragraph_separator",
+    "entrada": "Hola mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "19_zero_width_space",
+    "entrada": "Hola​mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "20_zero_width_non_joiner",
+    "entrada": "Hola‌mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "21_zero_width_joiner",
+    "entrada": "Hola‍mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "22_word_joiner",
+    "entrada": "Hola⁠mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "23_bom",
+    "entrada": "Hola﻿mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "24_soft_hyphen",
+    "entrada": "Hola­mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "25_combining_grapheme_joiner",
+    "entrada": "Hola͏mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "26_caracter_control_nulo",
+    "entrada": "Hola\u0000mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "27_caracter_control_bell",
+    "entrada": "Hola\u0007mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "28_caracter_control_escape",
+    "entrada": "Hola\u001bmundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "29_delete",
+    "entrada": "Holamundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "30_control_c1",
+    "entrada": "Holamundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "31_ltr_embedding",
+    "entrada": "Hola‪mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "32_rtl_embedding",
+    "entrada": "Hola‫mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "33_ltr_override",
+    "entrada": "Hola‭mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "34_rtl_override",
+    "entrada": "Hola‮mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "35_multiple_controles",
+    "entrada": "Hola\u0000\u0007\u001b​mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "36_nfkc_fullwidth",
+    "entrada": "Ｈｅｌｌｏ　Ｗｏｒｌｄ",
+    "salida": "Hello World",
+    "esperado": "Hello World",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "37_nfkc_ligatura",
+    "entrada": "office ﬁle",
+    "salida": "office file",
+    "esperado": "office file",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "38_nfkc_fraccion",
+    "entrada": "Precio ½ dólar",
+    "salida": "Precio 1⁄2 dólar",
+    "esperado": "Precio 1⁄2 dólar",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "39_nfkc_superindices",
+    "entrada": "x² + y³",
+    "salida": "x2 + y3",
+    "esperado": "x2 + y3",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "40_limpiar_todo_basico",
+    "entrada": "Hola   mundo   prueba",
+    "salida": "Holamundoprueba",
+    "esperado": "Holamundoprueba",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": true
+  },
+  {
+    "id": "41_limpiar_todo_tabs",
+    "entrada": "Hola\t\tmundo\tprueba",
+    "salida": "Holamundoprueba",
+    "esperado": "Holamundoprueba",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": true
+  },
+  {
+    "id": "42_limpiar_todo_unicode",
+    "entrada": "Hola  mundo prueba",
+    "salida": "Holamundoprueba",
+    "esperado": "Holamundoprueba",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": true
+  },
+  {
+    "id": "43_limpiar_todo_controles",
+    "entrada": "Hola\u0000\u0007 mundo",
+    "salida": "Holamundo",
+    "esperado": "Holamundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": true
+  },
+  {
+    "id": "44_cadena_vacia",
+    "entrada": "",
+    "salida": "",
+    "esperado": "",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "45_solo_espacios",
+    "entrada": "           ",
+    "salida": "",
+    "esperado": "",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "46_solo_espacios_limpiar_todo",
+    "entrada": "           ",
+    "salida": "",
+    "esperado": "",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": true
+  },
+  {
+    "id": "47_texto_corto",
+    "entrada": "Hola",
+    "salida": "Hola",
+    "esperado": "Hola",
+    "correcto": true,
+    "longitud_maxima": 4,
+    "limpiar_todo": false
+  },
+  {
+    "id": "48_supera_longitud_maxima",
+    "entrada": "Hola     mundo",
+    "salida": "Hola     mundo",
+    "esperado": "Hola     mundo",
+    "correcto": true,
+    "longitud_maxima": 5,
+    "limpiar_todo": false
+  },
+  {
+    "id": "49_combinacion_compleja",
+    "entrada": "  Hola ​​\t\tmundo\u0000   prueba﻿  ",
+    "salida": "Hola mundo prueba",
+    "esperado": "Hola mundo prueba",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "50_combinacion_compleja_limpiar_todo",
+    "entrada": "  Hola ​​\t\tmundo\u0000   prueba﻿  ",
+    "salida": "Holamundoprueba",
+    "esperado": "Holamundoprueba",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": true
+  }
+]

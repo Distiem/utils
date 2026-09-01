@@ -1,0 +1,452 @@
+[
+  {
+    "id": "51_unicode_multibyte_limite_bytes",
+    "entrada": "áéíóú",
+    "salida": "áéíóú",
+    "esperado": "áéíóú",
+    "correcto": true,
+    "longitud_maxima": 5,
+    "limpiar_todo": false
+  },
+  {
+    "id": "52_unicode_multibyte_supera_bytes",
+    "entrada": "áéíóú",
+    "salida": "áéíóú",
+    "esperado": "áéíóú",
+    "correcto": true,
+    "longitud_maxima": 4,
+    "limpiar_todo": false
+  },
+  {
+    "id": "53_emoji_unico",
+    "entrada": "😀",
+    "salida": "😀",
+    "esperado": "😀",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "54_emojis_consecutivos",
+    "entrada": "😀😃😄😁😆😅😂🤣",
+    "salida": "😀😃😄😁😆😅😂🤣",
+    "esperado": "😀😃😄😁😆😅😂🤣",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "55_emoji_entre_palabras",
+    "entrada": "Hola😀mundo",
+    "salida": "Hola😀mundo",
+    "esperado": "Hola😀mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "56_emoji_limite_bytes",
+    "entrada": "😀😀😀😀",
+    "salida": "😀😀😀😀",
+    "esperado": "😀😀😀😀",
+    "correcto": true,
+    "longitud_maxima": 15,
+    "limpiar_todo": false
+  },
+  {
+    "id": "57_emoji_supera_limite_bytes",
+    "entrada": "😀😀😀😀",
+    "salida": "😀😀😀😀",
+    "esperado": "😀😀😀😀",
+    "correcto": true,
+    "longitud_maxima": 14,
+    "limpiar_todo": false
+  },
+  {
+    "id": "58_zwj_emoji",
+    "entrada": "👨‍👩‍👧‍👦",
+    "salida": "👨 👩 👧 👦",
+    "esperado": "👨 👩 👧 👦",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "59_emoji_variation_selector",
+    "entrada": "❤️",
+    "salida": "❤️",
+    "esperado": "❤️",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "60_emoji_skin_tone",
+    "entrada": "👍🏽",
+    "salida": "👍🏽",
+    "esperado": "👍🏽",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "61_arabe",
+    "entrada": "مرحبا   بالعالم",
+    "salida": "مرحبا بالعالم",
+    "esperado": "مرحبا بالعالم",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "62_hebreo",
+    "entrada": "שלום   עולם",
+    "salida": "שלום עולם",
+    "esperado": "שלום עולם",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "63_chino",
+    "entrada": "你好　世界",
+    "salida": "你好 世界",
+    "esperado": "你好 世界",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "64_japones",
+    "entrada": "こんにちは　世界",
+    "salida": "こんにちは 世界",
+    "esperado": "こんにちは 世界",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "65_coreano",
+    "entrada": "안녕하세요　세계",
+    "salida": "안녕하세요 세계",
+    "esperado": "안녕하세요 세계",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "66_cirilico",
+    "entrada": "Привет   мир",
+    "salida": "Привет мир",
+    "esperado": "Привет мир",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "67_combinantes",
+    "entrada": "áéíóú",
+    "salida": "áéíóú",
+    "esperado": "áéíóú",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "68_combinantes_multiples",
+    "entrada": "ạ́̈",
+    "salida": "ạ́̈",
+    "esperado": "ạ̈́",
+    "correcto": false,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "69_combinante_separado",
+    "entrada": "Holámundo",
+    "salida": "Holámundo",
+    "esperado": "Holámundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "70_combinantes_y_espacios",
+    "entrada": "  á   é   í  ",
+    "salida": "á é í",
+    "esperado": "á é í",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "71_nfkc_caracteres_romanos",
+    "entrada": "Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ",
+    "salida": "I II III IV V",
+    "esperado": "I II III IV V",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "72_nfkc_parentesis",
+    "entrada": "｛Hola｝［mundo］",
+    "salida": "{Hola}[mundo]",
+    "esperado": "{Hola}[mundo]",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "73_nfkc_comillas",
+    "entrada": "＂Hola＂",
+    "salida": "\"Hola\"",
+    "esperado": "\"Hola\"",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "74_nfkc_simbolos",
+    "entrada": "＄１００．５０",
+    "salida": "$100.50",
+    "esperado": "$100.50",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "75_nfkc_kelvin",
+    "entrada": "K Å",
+    "salida": "K Å",
+    "esperado": "K Å",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "76_nfkc_micro",
+    "entrada": "µ μ",
+    "salida": "μ μ",
+    "esperado": "μ μ",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "77_nfkc_ordinales",
+    "entrada": "№ ① ② ③ ⑩",
+    "salida": "No 1 2 3 10",
+    "esperado": "No 1 2 3 10",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "78_nfkc_circled_letters",
+    "entrada": "Ⓐ Ⓑ Ⓒ Ⓓ",
+    "salida": "A B C D",
+    "esperado": "(A) (B) (C) (D)",
+    "correcto": false,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "79_nfkc_fracciones",
+    "entrada": "¼ ½ ¾ ⅓ ⅔",
+    "salida": "1⁄4 1⁄2 3⁄4 1⁄3 2⁄3",
+    "esperado": "1⁄4 1⁄2 3⁄4 1⁄3 2⁄3",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "80_nfkc_compatibilidad_mixta",
+    "entrada": "ＡＢＣ　①②③　ﬁﬂﬃﬄ",
+    "salida": "ABC 123 fiflffiffl",
+    "esperado": "ABC 123 fiflffiff",
+    "correcto": false,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "81_todos_controles_ascii",
+    "entrada": "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\u000b\f\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f",
+    "salida": "",
+    "esperado": "",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "82_controles_entre_cada_letra",
+    "entrada": "H\u0000o\u0001l\u0002a\u0003m\u0004u\u0005n\u0006d\u0007o",
+    "salida": "H o l a m u n d o",
+    "esperado": "H o l a m u n d o",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "83_controles_con_espacios",
+    "entrada": " \u0000 \u0001 \u0002 \u0003 ",
+    "salida": "",
+    "esperado": "",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "84_cf_invisibles_consecutivos",
+    "entrada": "Hola​‌‍⁠﻿mundo",
+    "salida": "Hola mundo",
+    "esperado": "Hola mundo",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "85_direccionamiento_mixto",
+    "entrada": "abc‪def‫ghi‬jkl‭‮mno",
+    "salida": "abc def ghi jkl mno",
+    "esperado": "abc def ghi jkl mno",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "86_direccionamiento_anidado",
+    "entrada": "A‪B‬C‭D‮E F",
+    "salida": "A B C D E F",
+    "esperado": "A B C D E F",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "87_separadores_todos",
+    "entrada": "A\tB\nC\rD\u000bE\fFG H I J K L M N O P Q R S T U V W X　Y",
+    "salida": "A B C D E F G H I J K L M N O P Q R S T U V W X Y",
+    "esperado": "A B C D E F G H I J K L M N O P Q R S T U V W X Y",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "88_mezcla_extrema",
+    "entrada": "\u0000  H​‌‍﻿o \u001b ĺa   \t\tm\u0007u⁠n d‮o  ",
+    "salida": "H o ĺa m u n d o",
+    "esperado": "H o ĺ a m u n d o",
+    "correcto": false,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "89_mezcla_extrema_limpiar_todo",
+    "entrada": "\u0000  H​‌‍﻿o \u001b ĺa   \t\tm\u0007u⁠n d‮o  ",
+    "salida": "Hoĺamundo",
+    "esperado": "Hoĺamund o",
+    "correcto": false,
+    "longitud_maxima": 1000,
+    "limpiar_todo": true
+  },
+  {
+    "id": "90_solo_invisibles",
+    "entrada": "\u0000\u0007\u001b­͏؜᠎​‌‍⁠﻿‪‫‬‭‮⁦⁧⁨⁩",
+    "salida": "",
+    "esperado": "",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "91_solo_invisibles_limpiar_todo",
+    "entrada": "\u0000\u0007\u001b­͏؜᠎​‌‍⁠﻿‪‫‬‭‮⁦⁧⁨⁩",
+    "salida": "",
+    "esperado": "",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": true
+  },
+  {
+    "id": "92_limite_cero",
+    "entrada": "A",
+    "salida": "A",
+    "esperado": "A",
+    "correcto": true,
+    "longitud_maxima": 0,
+    "limpiar_todo": false
+  },
+  {
+    "id": "93_limite_cero_vacio",
+    "entrada": "",
+    "salida": "",
+    "esperado": "",
+    "correcto": true,
+    "longitud_maxima": 0,
+    "limpiar_todo": false
+  },
+  {
+    "id": "94_limite_exactamente_bytes_unicode",
+    "entrada": "é",
+    "salida": "é",
+    "esperado": "é",
+    "correcto": true,
+    "longitud_maxima": 2,
+    "limpiar_todo": false
+  },
+  {
+    "id": "95_limite_un_byte_menos_unicode",
+    "entrada": "é",
+    "salida": "é",
+    "esperado": "é",
+    "correcto": true,
+    "longitud_maxima": 1,
+    "limpiar_todo": false
+  },
+  {
+    "id": "96_nfkc_aumenta_longitud",
+    "entrada": "ﬃ",
+    "salida": "ﬃ",
+    "esperado": "ffi",
+    "correcto": false,
+    "longitud_maxima": 1,
+    "limpiar_todo": false
+  },
+  {
+    "id": "97_nfkc_aumenta_longitud_y_supera_limite",
+    "entrada": "ﬃ",
+    "salida": "ﬃ",
+    "esperado": "ffi",
+    "correcto": false,
+    "longitud_maxima": 2,
+    "limpiar_todo": false
+  },
+  {
+    "id": "98_nfkc_y_limpiar_todo",
+    "entrada": "ﬃ　ＡＢＣ",
+    "salida": "ffiABC",
+    "esperado": "ffiABC",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": true
+  },
+  {
+    "id": "99_texto_largo_repetido",
+    "entrada": "A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A",
+    "salida": "A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A",
+    "esperado": "A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": false
+  },
+  {
+    "id": "100_texto_largo_limpiar_todo",
+    "entrada": " A   B ​ C \t D \n E \u0000 F   G ﻿ H ",
+    "salida": "ABCDEFGH",
+    "esperado": "ABCDEFGH",
+    "correcto": true,
+    "longitud_maxima": 1000,
+    "limpiar_todo": true
+  }
+]

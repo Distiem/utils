@@ -1,0 +1,352 @@
+[
+  {
+    "id": "01_espacios_multiples",
+    "texto": "Hola     mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "02_espacios_inicio",
+    "texto": "    Hola mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "03_espacios_final",
+    "texto": "Hola mundo    ",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "04_espacios_inicio_final",
+    "texto": "   Hola mundo   ",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "05_tabuladores",
+    "texto": "Hola\t\tmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "06_saltos_linea",
+    "texto": "Hola\n\nmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "07_crlf",
+    "texto": "Hola\r\n\r\nmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "08_form_feed",
+    "texto": "Hola\u000Cmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "09_vertical_tab",
+    "texto": "Hola\u000Bmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "10_nbsp",
+    "texto": "Hola\u00A0mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "11_nbsp_multiples",
+    "texto": "Hola\u00A0\u00A0\u00A0mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "12_ensp",
+    "texto": "Hola\u2002mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "13_emsp",
+    "texto": "Hola\u2003mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "14_thin_space",
+    "texto": "Hola\u2009mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "15_narrow_nbsp",
+    "texto": "Hola\u202Fmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "16_ideographic_space",
+    "texto": "Hola\u3000mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "17_line_separator",
+    "texto": "Hola\u2028mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "18_paragraph_separator",
+    "texto": "Hola\u2029mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "19_zero_width_space",
+    "texto": "Hola\u200Bmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "20_zero_width_non_joiner",
+    "texto": "Hola\u200Cmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "21_zero_width_joiner",
+    "texto": "Hola\u200Dmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "22_word_joiner",
+    "texto": "Hola\u2060mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "23_bom",
+    "texto": "Hola\uFEFFmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "24_soft_hyphen",
+    "texto": "Hola\u00ADmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "25_combining_grapheme_joiner",
+    "texto": "Hola\u034Fmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "26_caracter_control_nulo",
+    "texto": "Hola\u0000mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "27_caracter_control_bell",
+    "texto": "Hola\u0007mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "28_caracter_control_escape",
+    "texto": "Hola\u001Bmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "29_delete",
+    "texto": "Hola\u007Fmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "30_control_c1",
+    "texto": "Hola\u0085mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "31_ltr_embedding",
+    "texto": "Hola\u202Amundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "32_rtl_embedding",
+    "texto": "Hola\u202Bmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "33_ltr_override",
+    "texto": "Hola\u202Dmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "34_rtl_override",
+    "texto": "Hola\u202Emundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "35_multiple_controles",
+    "texto": "Hola\u0000\u0007\u001B\u200Bmundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo"
+  },
+  {
+    "id": "36_nfkc_fullwidth",
+    "texto": "Ｈｅｌｌｏ　Ｗｏｒｌｄ",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hello World"
+  },
+  {
+    "id": "37_nfkc_ligatura",
+    "texto": "office ﬁle",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "office file"
+  },
+  {
+    "id": "38_nfkc_fraccion",
+    "texto": "Precio ½ dólar",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Precio 1⁄2 dólar"
+  },
+  {
+    "id": "39_nfkc_superindices",
+    "texto": "x² + y³",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "x2 + y3"
+  },
+  {
+    "id": "40_limpiar_todo_basico",
+    "texto": "Hola   mundo   prueba",
+    "longitud_maxima": 1000,
+    "limpiar_todo": true,
+    "esperado": "Holamundoprueba"
+  },
+  {
+    "id": "41_limpiar_todo_tabs",
+    "texto": "Hola\t\tmundo\tprueba",
+    "longitud_maxima": 1000,
+    "limpiar_todo": true,
+    "esperado": "Holamundoprueba"
+  },
+  {
+    "id": "42_limpiar_todo_unicode",
+    "texto": "Hola\u00A0\u00A0mundo\u2003prueba",
+    "longitud_maxima": 1000,
+    "limpiar_todo": true,
+    "esperado": "Holamundoprueba"
+  },
+  {
+    "id": "43_limpiar_todo_controles",
+    "texto": "Hola\u0000\u0007 mundo",
+    "longitud_maxima": 1000,
+    "limpiar_todo": true,
+    "esperado": "Holamundo"
+  },
+  {
+    "id": "44_cadena_vacia",
+    "texto": "",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": ""
+  },
+  {
+    "id": "45_solo_espacios",
+    "texto": "           ",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": ""
+  },
+  {
+    "id": "46_solo_espacios_limpiar_todo",
+    "texto": "           ",
+    "longitud_maxima": 1000,
+    "limpiar_todo": true,
+    "esperado": ""
+  },
+  {
+    "id": "47_texto_corto",
+    "texto": "Hola",
+    "longitud_maxima": 4,
+    "limpiar_todo": false,
+    "esperado": "Hola"
+  },
+  {
+    "id": "48_supera_longitud_maxima",
+    "texto": "Hola     mundo",
+    "longitud_maxima": 5,
+    "limpiar_todo": false,
+    "esperado": "Hola     mundo"
+  },
+  {
+    "id": "49_combinacion_compleja",
+    "texto": "  Hola\u00A0\u200B\u200B\t\tmundo\u0000\u2028  prueba\uFEFF  ",
+    "longitud_maxima": 1000,
+    "limpiar_todo": false,
+    "esperado": "Hola mundo prueba"
+  },
+  {
+    "id": "50_combinacion_compleja_limpiar_todo",
+    "texto": "  Hola\u00A0\u200B\u200B\t\tmundo\u0000\u2028  prueba\uFEFF  ",
+    "longitud_maxima": 1000,
+    "limpiar_todo": true,
+    "esperado": "Holamundoprueba"
+  }
+]
