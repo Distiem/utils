@@ -5,6 +5,7 @@
 #[derive(Debug, PartialEq, Eq)]
 pub enum ReglaCaracteres {
     SoloNumeros,
+    SoloLetrasYEspacios,
     /// Permite caracteres alfanuméricos, espacios en blanco y una lista de símbolos permitidos.
     AlfanumericoConEspaciosYSimbolos(Vec<char>),
     AsciiImprimible,
@@ -21,6 +22,7 @@ impl ReglaCaracteres {
     pub fn es_permitido(&self, c: char) -> bool {
         match self {
             Self::SoloNumeros => c.is_ascii_digit(),
+            Self::SoloLetrasYEspacios => { c.is_alphabetic() || c.is_whitespace() }
             Self::AlfanumericoConEspaciosYSimbolos(simbolos) => {
                 c.is_alphanumeric() || c.is_whitespace() || simbolos.contains(&c)
             }

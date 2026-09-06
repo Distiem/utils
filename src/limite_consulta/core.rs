@@ -25,7 +25,7 @@ impl From<u64> for LimiteConsulta {
     }
 }
 
-/// Query parameters para endpoints de listado. | Request-deserealize
+// Query parameters para endpoints de listado. | Request-deserealize
 use serde::Deserialize;
 
 #[derive(Debug, Deserialize)]

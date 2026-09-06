@@ -64,6 +64,10 @@ impl StringValidatorConfig {
         self.caracter_permitido(ReglaCaracteres::SoloNumeros)
     }
 
+    pub fn solo_letras_y_espacios(self) -> Self {
+        self.caracter_permitido(ReglaCaracteres::SoloLetrasYEspacios)
+    }
+
     /// Configura la regla para aceptar caracteres alfanuméricos y los símbolos indicados.
     pub fn con_simbolos(self, simbolos: impl IntoIterator<Item = char>) -> Self {
         self.caracter_permitido(ReglaCaracteres::con_simbolos(simbolos))
